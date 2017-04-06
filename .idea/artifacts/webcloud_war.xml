@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webcloud:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="webcloud.war">
+      <element id="artifact" artifact-name="webcloud:war exploded" />
+    </root>
+  </artifact>
+</component>
