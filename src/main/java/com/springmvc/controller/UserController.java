@@ -26,7 +26,7 @@ public class UserController {
 
     @RequestMapping("/index")
     public String index(){
-        return "index2";
+        return "index";
     }
 
     @RequestMapping("/insert")

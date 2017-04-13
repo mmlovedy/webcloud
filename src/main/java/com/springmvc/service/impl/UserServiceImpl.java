@@ -29,4 +29,5 @@ public class UserServiceImpl implements UserService {
     public List<User> queryUserInfo() {
         return userDAO.queryUsers();
     }
+
 }

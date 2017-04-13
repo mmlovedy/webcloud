@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvc.dao.ydMapper" >
+  <resultMap id="BaseResultMap" type="com.springmvc.model.yd" >
+    <result column="ydbh" property="ydbh" jdbcType="CHAR" />
+    <result column="tyrbh" property="tyrbh" jdbcType="CHAR" />
+    <result column="tyrmc" property="tyrmc" jdbcType="VARCHAR" />
+    <result column="tyrlxr" property="tyrlxr" jdbcType="VARCHAR" />
+    <result column="tyrdz" property="tyrdz" jdbcType="VARCHAR" />
+    <result column="tyrlxdh1" property="tyrlxdh1" jdbcType="VARCHAR" />
+    <result column="tyrlxdh2" property="tyrlxdh2" jdbcType="VARCHAR" />
+    <result column="tyrsj" property="tyrsj" jdbcType="VARCHAR" />
+    <result column="shrbh" property="shrbh" jdbcType="CHAR" />
+    <result column="shrmc" property="shrmc" jdbcType="VARCHAR" />
+    <result column="shrlxr" property="shrlxr" jdbcType="VARCHAR" />
+    <result column="shrdz" property="shrdz" jdbcType="VARCHAR" />
+    <result column="shrlxdh1" property="shrlxdh1" jdbcType="VARCHAR" />
+    <result column="shrlxdh2" property="shrlxdh2" jdbcType="VARCHAR" />
+    <result column="shrsj" property="shrsj" jdbcType="VARCHAR" />
+    <result column="tyrq" property="tyrq" jdbcType="DATE" />
+    <result column="khyqddsj" property="khyqddsj" jdbcType="DATE" />
+    <result column="qydmc" property="qydmc" jdbcType="CHAR" />
+    <result column="qydzbh" property="qydzbh" jdbcType="CHAR" />
+    <result column="mddmc" property="mddmc" jdbcType="CHAR" />
+    <result column="mddzbh" property="mddzbh" jdbcType="CHAR" />
+    <result column="dhcdh" property="dhcdh" jdbcType="VARCHAR" />
+    <result column="fwyq" property="fwyq" jdbcType="CHAR" />
+    <result column="shfs" property="shfs" jdbcType="INTEGER" />
+    <result column="sohfs" property="sohfs" jdbcType="INTEGER" />
+    <result column="hwmc" property="hwmc" jdbcType="VARCHAR" />
+    <result column="js" property="js" jdbcType="INTEGER" />
+    <result column="bibh" property="bibh" jdbcType="VARCHAR" />
+    <result column="hwdjbh" property="hwdjbh" jdbcType="VARCHAR" />
+    <result column="zl" property="zl" jdbcType="REAL" />
+    <result column="tj" property="tj" jdbcType="REAL" />
+    <result column="hsbl" property="hsbl" jdbcType="INTEGER" />
+    <result column="zldj" property="zldj" jdbcType="REAL" />
+    <result column="tjdj" property="tjdj" jdbcType="REAL" />
+    <result column="ffje" property="ffje" jdbcType="REAL" />
+    <result column="gbf" property="gbf" jdbcType="REAL" />
+    <result column="thf" property="thf" jdbcType="REAL" />
+    <result column="shf" property="shf" jdbcType="REAL" />
+    <result column="dbf" property="dbf" jdbcType="REAL" />
+    <result column="bje" property="bje" jdbcType="REAL" />
+    <result column="bjl" property="bjl" jdbcType="INTEGER" />
+    <result column="bjf" property="bjf" jdbcType="REAL" />
+    <result column="hjje" property="hjje" jdbcType="REAL" />
+    <result column="fqysje" property="fqysje" jdbcType="REAL" />
+    <result column="dqjsysje" property="dqjsysje" jdbcType="REAL" />
+    <result column="shrfkysje" property="shrfkysje" jdbcType="REAL" />
+    <result column="fqss" property="fqss" jdbcType="REAL" />
+    <result column="jsss" property="jsss" jdbcType="REAL" />
+    <result column="shrfyss" property="shrfyss" jdbcType="REAL" />
+    <result column="dshke" property="dshke" jdbcType="REAL" />
+    <result column="dsfwfl" property="dsfwfl" jdbcType="INTEGER" />
+    <result column="dshk" property="dshk" jdbcType="REAL" />
+    <result column="bz" property="bz" jdbcType="VARCHAR" />
+    <result column="tyrqz" property="tyrqz" jdbcType="VARCHAR" />
+    <result column="cyrqz" property="cyrqz" jdbcType="VARCHAR" />
+    <result column="cwqz" property="cwqz" jdbcType="VARCHAR" />
+    <result column="jhzt" property="jhzt" jdbcType="INTEGER" />
+    <result column="ydwz" property="ydwz" jdbcType="CHAR" />
+    <result column="ydzt" property="ydzt" jdbcType="INTEGER" />
+    <result column="fhcwzt" property="fhcwzt" jdbcType="INTEGER" />
+    <result column="dhcwzt" property="dhcwzt" jdbcType="INTEGER" />
+    <result column="kdsj" property="kdsj" jdbcType="DATE" />
+    <result column="lrsj" property="lrsj" jdbcType="DATE" />
+    <result column="sfykfp" property="sfykfp" jdbcType="INTEGER" />
+    <result column="zzcs" property="zzcs" jdbcType="INTEGER" />
+    <result column="qrshfs" property="qrshfs" jdbcType="INTEGER" />
+    <result column="sfqrshfs" property="sfqrshfs" jdbcType="INTEGER" />
+    <result column="qrshdd" property="qrshdd" jdbcType="VARCHAR" />
+    <result column="qsrq" property="qsrq" jdbcType="DATE" />
+    <result column="qsqk" property="qsqk" jdbcType="VARCHAR" />
+    <result column="shqsddycs" property="shqsddycs" jdbcType="INTEGER" />
+    <result column="fhtzpzbh" property="fhtzpzbh" jdbcType="VARCHAR" />
+    <result column="dhtzpzbh" property="dhtzpzbh" jdbcType="VARCHAR" />
+    <result column="ydlx" property="ydlx" jdbcType="INTEGER" />
+    <result column="khhd" property="khhd" jdbcType="INTEGER" />
+    <result column="khhdsm" property="khhdsm" jdbcType="VARCHAR" />
+    <result column="ldy" property="ldy" jdbcType="VARCHAR" />
+    <result column="thywy" property="thywy" jdbcType="VARCHAR" />
+    <result column="shywy" property="shywy" jdbcType="VARCHAR" />
+    <result column="kdy" property="kdy" jdbcType="VARCHAR" />
+    <result column="ldyszgs" property="ldyszgs" jdbcType="CHAR" />
+    <result column="nbbz" property="nbbz" jdbcType="VARCHAR" />
+    <result column="hh" property="hh" jdbcType="VARCHAR" />
+    <result column="qydssyjgs" property="qydssyjgs" jdbcType="CHAR" />
+    <result column="mddssyjgs" property="mddssyjgs" jdbcType="CHAR" />
+    <result column="mddzbh_1" property="mddzbh1" jdbcType="CHAR" />
+    <result column="mddzbh_2" property="mddzbh2" jdbcType="CHAR" />
+    <result column="mddzbh_3" property="mddzbh3" jdbcType="CHAR" />
+    <result column="sfytz" property="sfytz" jdbcType="INTEGER" />
+    <result column="yd_fcbh" property="ydFcbh" jdbcType="VARCHAR" />
+    <result column="yd_cph" property="ydCph" jdbcType="VARCHAR" />
+    <result column="yyshsj" property="yyshsj" jdbcType="DATE" />
+    <result column="fdfs" property="fdfs" jdbcType="INTEGER" />
+    <result column="zzfwxmjfy" property="zzfwxmjfy" jdbcType="VARCHAR" />
+    <result column="yd_fhfph" property="ydFhfph" jdbcType="VARCHAR" />
+    <result column="yd_fhbzrq" property="ydFhbzrq" jdbcType="DATE" />
+    <result column="yd_fhbzd" property="ydFhbzd" jdbcType="VARCHAR" />
+    <result column="yd_dhfph" property="ydDhfph" jdbcType="VARCHAR" />
+    <result column="yd_dhbzrq" property="ydDhbzrq" jdbcType="DATE" />
+    <result column="yd_dhbzd" property="ydDhbzd" jdbcType="VARCHAR" />
+    <result column="yd_fhfcbh" property="ydFhfcbh" jdbcType="VARCHAR" />
+    <result column="yd_fhcph" property="ydFhcph" jdbcType="VARCHAR" />
+    <result column="yd_qtsf" property="ydQtsf" jdbcType="REAL" />
+    <result column="yd_qtsf_dh" property="ydQtsfDh" jdbcType="REAL" />
+    <result column="tswp" property="tswp" jdbcType="INTEGER" />
+    <result column="qzh" property="qzh" jdbcType="INTEGER" />
+    <result column="yxh" property="yxh" jdbcType="INTEGER" />
+    <result column="fwlx" property="fwlx" jdbcType="INTEGER" />
+    <result column="bzmx" property="bzmx" jdbcType="VARCHAR" />
+    <result column="dxfw" property="dxfw" jdbcType="INTEGER" />
+    <result column="tff" property="tff" jdbcType="REAL" />
+    <result column="xxf" property="xxf" jdbcType="REAL" />
+    <result column="shrjsys" property="shrjsys" jdbcType="REAL" />
+    <result column="shrjsss" property="shrjsss" jdbcType="REAL" />
+    <result column="dsfzfys" property="dsfzfys" jdbcType="REAL" />
+    <result column="dsfzfss" property="dsfzfss" jdbcType="REAL" />
+    <result column="dsfkhbh" property="dsfkhbh" jdbcType="CHAR" />
+    <result column="dsfkhmc" property="dsfkhmc" jdbcType="VARCHAR" />
+    <result column="dsflxr" property="dsflxr" jdbcType="VARCHAR" />
+    <result column="dsfdz" property="dsfdz" jdbcType="VARCHAR" />
+    <result column="record_date" property="recordDate" jdbcType="DATE" />
+    <result column="shyqbh" property="shyqbh" jdbcType="CHAR" />
+    <result column="tzkhsj" property="tzkhsj" jdbcType="DATE" />
+    <result column="khqssj" property="khqssj" jdbcType="DATE" />
+    <result column="thmm" property="thmm" jdbcType="CHAR" />
+    <result column="tbhwlx" property="tbhwlx" jdbcType="INTEGER" />
+    <result column="eas_sfsd" property="easSfsd" jdbcType="INTEGER" />
+    <result column="eas_fq" property="easFq" jdbcType="REAL" />
+    <result column="eas_js" property="easJs" jdbcType="REAL" />
+    <result column="eas_df" property="easDf" jdbcType="REAL" />
+    <result column="eas_dfjs" property="easDfjs" jdbcType="REAL" />
+    <result column="eas_dsf" property="easDsf" jdbcType="REAL" />
+    <result column="isfqdyd" property="isfqdyd" jdbcType="INTEGER" />
+    <result column="eas_sggzsd" property="easSggzsd" jdbcType="INTEGER" />
+    <result column="lhy" property="lhy" jdbcType="VARCHAR" />
+    <result column="last_mod_date" property="lastModDate" jdbcType="DATE" />
+    <result column="ryf" property="ryf" jdbcType="REAL" />
+    <result column="pdaxxbs" property="pdaxxbs" jdbcType="INTEGER" />
+    <result column="dphbs" property="dphbs" jdbcType="INTEGER" />
+    <result column="pdajs" property="pdajs" jdbcType="INTEGER" />
+    <result column="pdazxtx" property="pdazxtx" jdbcType="VARCHAR" />
+    <result column="zxzl" property="zxzl" jdbcType="REAL" />
+    <result column="fhrareacode" property="fhrareacode" jdbcType="CHAR" />
+    <result column="shrareacode" property="shrareacode" jdbcType="CHAR" />
+    <result column="ys" property="ys" jdbcType="INTEGER" />
+    <result column="ext_khdh" property="extKhdh" jdbcType="VARCHAR" />
+    <result column="sfgzdkh" property="sfgzdkh" jdbcType="INTEGER" />
+    <result column="ydly" property="ydly" jdbcType="INTEGER" />
+    <result column="omszt" property="omszt" jdbcType="INTEGER" />
+    <result column="yd_dycs" property="ydDycs" jdbcType="INTEGER" />
+    <result column="dshk_zhxx" property="dshkZhxx" jdbcType="VARCHAR" />
+    <result column="sxjssj" property="sxjssj" jdbcType="DATE" />
+    <result column="ljhh" property="ljhh" jdbcType="VARCHAR" />
+    <result column="ydqszt" property="ydqszt" jdbcType="INTEGER" />
+    <result column="dshksxf_sqfs" property="dshksxfSqfs" jdbcType="INTEGER" />
+    <result column="sccwslsj" property="sccwslsj" jdbcType="DATE" />
+    <result column="ydlb" property="ydlb" jdbcType="INTEGER" />
+    <result column="ydlb_fh" property="ydlbFh" jdbcType="INTEGER" />
+    <result column="ydlb_dh" property="ydlbDh" jdbcType="INTEGER" />
+    <result column="ydlb_dsf" property="ydlbDsf" jdbcType="INTEGER" />
+    <result column="ydlb_dssxf" property="ydlbDssxf" jdbcType="INTEGER" />
+    <result column="oms_ddqd" property="omsDdqd" jdbcType="VARCHAR" />
+    <result column="max_khyqddsj" property="maxKhyqddsj" jdbcType="DATE" />
+    <result column="slf" property="slf" jdbcType="REAL" />
+    <result column="ydxcjl" property="ydxcjl" jdbcType="REAL" />
+    <result column="oms_discount" property="omsDiscount" jdbcType="REAL" />
+    <result column="payer_type" property="payerType" jdbcType="INTEGER" />
+    <result column="sfrfd" property="sfrfd" jdbcType="INTEGER" />
+    <result column="transporttype" property="transporttype" jdbcType="INTEGER" />
+  </resultMap>
+  <insert id="insert" parameterType="com.springmvc.model.yd" >
+    insert into LD_YD (ydbh, tyrbh, tyrmc, 
+      tyrlxr, tyrdz, tyrlxdh1, 
+      tyrlxdh2, tyrsj, shrbh, 
+      shrmc, shrlxr, shrdz, 
+      shrlxdh1, shrlxdh2, shrsj, 
+      tyrq, khyqddsj, qydmc, qydzbh, 
+      mddmc, mddzbh, dhcdh, fwyq, 
+      shfs, sohfs, hwmc, 
+      js, bibh, hwdjbh, zl, 
+      tj, hsbl, zldj, tjdj, 
+      ffje, gbf, thf, shf, 
+      dbf, bje, bjl, bjf, 
+      hjje, fqysje, dqjsysje, shrfkysje, 
+      fqss, jsss, shrfyss, dshke, 
+      dsfwfl, dshk, bz, tyrqz, 
+      cyrqz, cwqz, jhzt, 
+      ydwz, ydzt, fhcwzt, dhcwzt, 
+      kdsj, lrsj, sfykfp, zzcs, 
+      qrshfs, sfqrshfs, qrshdd, 
+      qsrq, qsqk, shqsddycs, 
+      fhtzpzbh, dhtzpzbh, ydlx, 
+      khhd, khhdsm, ldy, 
+      thywy, shywy, kdy, 
+      ldyszgs, nbbz, hh, qydssyjgs, 
+      mddssyjgs, mddzbh_1, mddzbh_2, 
+      mddzbh_3, sfytz, yd_fcbh, 
+      yd_cph, yyshsj, fdfs, zzfwxmjfy, 
+      yd_fhfph, yd_fhbzrq, yd_fhbzd, 
+      yd_dhfph, yd_dhbzrq, yd_dhbzd, 
+      yd_fhfcbh, yd_fhcph, yd_qtsf, 
+      yd_qtsf_dh, tswp, qzh, yxh, 
+      fwlx, bzmx, dxfw, tff, 
+      xxf, shrjsys, shrjsss, dsfzfys, 
+      dsfzfss, dsfkhbh, dsfkhmc, 
+      dsflxr, dsfdz, record_date, 
+      shyqbh, tzkhsj, khqssj, thmm, 
+      tbhwlx, eas_sfsd, eas_fq, 
+      eas_js, eas_df, eas_dfjs, eas_dsf, 
+      isfqdyd, eas_sggzsd, lhy, 
+      last_mod_date, ryf, pdaxxbs, 
+      dphbs, pdajs, pdazxtx, 
+      zxzl, fhrareacode, shrareacode, 
+      ys, ext_khdh, sfgzdkh, 
+      ydly, omszt, yd_dycs, 
+      dshk_zhxx, sxjssj, ljhh, 
+      ydqszt, dshksxf_sqfs, sccwslsj, 
+      ydlb, ydlb_fh, ydlb_dh, 
+      ydlb_dsf, ydlb_dssxf, oms_ddqd, 
+      max_khyqddsj, slf, ydxcjl, oms_discount, 
+      payer_type, sfrfd, transporttype
+      )
+    values (#{ydbh,jdbcType=CHAR}, #{tyrbh,jdbcType=CHAR}, #{tyrmc,jdbcType=VARCHAR}, 
+      #{tyrlxr,jdbcType=VARCHAR}, #{tyrdz,jdbcType=VARCHAR}, #{tyrlxdh1,jdbcType=VARCHAR}, 
+      #{tyrlxdh2,jdbcType=VARCHAR}, #{tyrsj,jdbcType=VARCHAR}, #{shrbh,jdbcType=CHAR}, 
+      #{shrmc,jdbcType=VARCHAR}, #{shrlxr,jdbcType=VARCHAR}, #{shrdz,jdbcType=VARCHAR}, 
+      #{shrlxdh1,jdbcType=VARCHAR}, #{shrlxdh2,jdbcType=VARCHAR}, #{shrsj,jdbcType=VARCHAR}, 
+      #{tyrq,jdbcType=DATE}, #{khyqddsj,jdbcType=DATE}, #{qydmc,jdbcType=CHAR}, #{qydzbh,jdbcType=CHAR}, 
+      #{mddmc,jdbcType=CHAR}, #{mddzbh,jdbcType=CHAR}, #{dhcdh,jdbcType=VARCHAR}, #{fwyq,jdbcType=CHAR}, 
+      #{shfs,jdbcType=INTEGER}, #{sohfs,jdbcType=INTEGER}, #{hwmc,jdbcType=VARCHAR}, 
+      #{js,jdbcType=INTEGER}, #{bibh,jdbcType=VARCHAR}, #{hwdjbh,jdbcType=VARCHAR}, #{zl,jdbcType=REAL}, 
+      #{tj,jdbcType=REAL}, #{hsbl,jdbcType=INTEGER}, #{zldj,jdbcType=REAL}, #{tjdj,jdbcType=REAL}, 
+      #{ffje,jdbcType=REAL}, #{gbf,jdbcType=REAL}, #{thf,jdbcType=REAL}, #{shf,jdbcType=REAL}, 
+      #{dbf,jdbcType=REAL}, #{bje,jdbcType=REAL}, #{bjl,jdbcType=INTEGER}, #{bjf,jdbcType=REAL}, 
+      #{hjje,jdbcType=REAL}, #{fqysje,jdbcType=REAL}, #{dqjsysje,jdbcType=REAL}, #{shrfkysje,jdbcType=REAL}, 
+      #{fqss,jdbcType=REAL}, #{jsss,jdbcType=REAL}, #{shrfyss,jdbcType=REAL}, #{dshke,jdbcType=REAL}, 
+      #{dsfwfl,jdbcType=INTEGER}, #{dshk,jdbcType=REAL}, #{bz,jdbcType=VARCHAR}, #{tyrqz,jdbcType=VARCHAR}, 
+      #{cyrqz,jdbcType=VARCHAR}, #{cwqz,jdbcType=VARCHAR}, #{jhzt,jdbcType=INTEGER}, 
+      #{ydwz,jdbcType=CHAR}, #{ydzt,jdbcType=INTEGER}, #{fhcwzt,jdbcType=INTEGER}, #{dhcwzt,jdbcType=INTEGER}, 
+      #{kdsj,jdbcType=DATE}, #{lrsj,jdbcType=DATE}, #{sfykfp,jdbcType=INTEGER}, #{zzcs,jdbcType=INTEGER}, 
+      #{qrshfs,jdbcType=INTEGER}, #{sfqrshfs,jdbcType=INTEGER}, #{qrshdd,jdbcType=VARCHAR}, 
+      #{qsrq,jdbcType=DATE}, #{qsqk,jdbcType=VARCHAR}, #{shqsddycs,jdbcType=INTEGER}, 
+      #{fhtzpzbh,jdbcType=VARCHAR}, #{dhtzpzbh,jdbcType=VARCHAR}, #{ydlx,jdbcType=INTEGER}, 
+      #{khhd,jdbcType=INTEGER}, #{khhdsm,jdbcType=VARCHAR}, #{ldy,jdbcType=VARCHAR}, 
+      #{thywy,jdbcType=VARCHAR}, #{shywy,jdbcType=VARCHAR}, #{kdy,jdbcType=VARCHAR}, 
+      #{ldyszgs,jdbcType=CHAR}, #{nbbz,jdbcType=VARCHAR}, #{hh,jdbcType=VARCHAR}, #{qydssyjgs,jdbcType=CHAR}, 
+      #{mddssyjgs,jdbcType=CHAR}, #{mddzbh1,jdbcType=CHAR}, #{mddzbh2,jdbcType=CHAR}, 
+      #{mddzbh3,jdbcType=CHAR}, #{sfytz,jdbcType=INTEGER}, #{ydFcbh,jdbcType=VARCHAR}, 
+      #{ydCph,jdbcType=VARCHAR}, #{yyshsj,jdbcType=DATE}, #{fdfs,jdbcType=INTEGER}, #{zzfwxmjfy,jdbcType=VARCHAR}, 
+      #{ydFhfph,jdbcType=VARCHAR}, #{ydFhbzrq,jdbcType=DATE}, #{ydFhbzd,jdbcType=VARCHAR}, 
+      #{ydDhfph,jdbcType=VARCHAR}, #{ydDhbzrq,jdbcType=DATE}, #{ydDhbzd,jdbcType=VARCHAR}, 
+      #{ydFhfcbh,jdbcType=VARCHAR}, #{ydFhcph,jdbcType=VARCHAR}, #{ydQtsf,jdbcType=REAL}, 
+      #{ydQtsfDh,jdbcType=REAL}, #{tswp,jdbcType=INTEGER}, #{qzh,jdbcType=INTEGER}, #{yxh,jdbcType=INTEGER}, 
+      #{fwlx,jdbcType=INTEGER}, #{bzmx,jdbcType=VARCHAR}, #{dxfw,jdbcType=INTEGER}, #{tff,jdbcType=REAL}, 
+      #{xxf,jdbcType=REAL}, #{shrjsys,jdbcType=REAL}, #{shrjsss,jdbcType=REAL}, #{dsfzfys,jdbcType=REAL}, 
+      #{dsfzfss,jdbcType=REAL}, #{dsfkhbh,jdbcType=CHAR}, #{dsfkhmc,jdbcType=VARCHAR}, 
+      #{dsflxr,jdbcType=VARCHAR}, #{dsfdz,jdbcType=VARCHAR}, #{recordDate,jdbcType=DATE}, 
+      #{shyqbh,jdbcType=CHAR}, #{tzkhsj,jdbcType=DATE}, #{khqssj,jdbcType=DATE}, #{thmm,jdbcType=CHAR}, 
+      #{tbhwlx,jdbcType=INTEGER}, #{easSfsd,jdbcType=INTEGER}, #{easFq,jdbcType=REAL}, 
+      #{easJs,jdbcType=REAL}, #{easDf,jdbcType=REAL}, #{easDfjs,jdbcType=REAL}, #{easDsf,jdbcType=REAL}, 
+      #{isfqdyd,jdbcType=INTEGER}, #{easSggzsd,jdbcType=INTEGER}, #{lhy,jdbcType=VARCHAR}, 
+      #{lastModDate,jdbcType=DATE}, #{ryf,jdbcType=REAL}, #{pdaxxbs,jdbcType=INTEGER}, 
+      #{dphbs,jdbcType=INTEGER}, #{pdajs,jdbcType=INTEGER}, #{pdazxtx,jdbcType=VARCHAR}, 
+      #{zxzl,jdbcType=REAL}, #{fhrareacode,jdbcType=CHAR}, #{shrareacode,jdbcType=CHAR}, 
+      #{ys,jdbcType=INTEGER}, #{extKhdh,jdbcType=VARCHAR}, #{sfgzdkh,jdbcType=INTEGER}, 
+      #{ydly,jdbcType=INTEGER}, #{omszt,jdbcType=INTEGER}, #{ydDycs,jdbcType=INTEGER}, 
+      #{dshkZhxx,jdbcType=VARCHAR}, #{sxjssj,jdbcType=DATE}, #{ljhh,jdbcType=VARCHAR}, 
+      #{ydqszt,jdbcType=INTEGER}, #{dshksxfSqfs,jdbcType=INTEGER}, #{sccwslsj,jdbcType=DATE}, 
+      #{ydlb,jdbcType=INTEGER}, #{ydlbFh,jdbcType=INTEGER}, #{ydlbDh,jdbcType=INTEGER}, 
+      #{ydlbDsf,jdbcType=INTEGER}, #{ydlbDssxf,jdbcType=INTEGER}, #{omsDdqd,jdbcType=VARCHAR}, 
+      #{maxKhyqddsj,jdbcType=DATE}, #{slf,jdbcType=REAL}, #{ydxcjl,jdbcType=REAL}, #{omsDiscount,jdbcType=REAL}, 
+      #{payerType,jdbcType=INTEGER}, #{sfrfd,jdbcType=INTEGER}, #{transporttype,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.springmvc.model.yd" >
+    insert into LD_YD
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="ydbh != null" >
+        ydbh,
+      </if>
+      <if test="tyrbh != null" >
+        tyrbh,
+      </if>
+      <if test="tyrmc != null" >
+        tyrmc,
+      </if>
+      <if test="tyrlxr != null" >
+        tyrlxr,
+      </if>
+      <if test="tyrdz != null" >
+        tyrdz,
+      </if>
+      <if test="tyrlxdh1 != null" >
+        tyrlxdh1,
+      </if>
+      <if test="tyrlxdh2 != null" >
+        tyrlxdh2,
+      </if>
+      <if test="tyrsj != null" >
+        tyrsj,
+      </if>
+      <if test="shrbh != null" >
+        shrbh,
+      </if>
+      <if test="shrmc != null" >
+        shrmc,
+      </if>
+      <if test="shrlxr != null" >
+        shrlxr,
+      </if>
+      <if test="shrdz != null" >
+        shrdz,
+      </if>
+      <if test="shrlxdh1 != null" >
+        shrlxdh1,
+      </if>
+      <if test="shrlxdh2 != null" >
+        shrlxdh2,
+      </if>
+      <if test="shrsj != null" >
+        shrsj,
+      </if>
+      <if test="tyrq != null" >
+        tyrq,
+      </if>
+      <if test="khyqddsj != null" >
+        khyqddsj,
+      </if>
+      <if test="qydmc != null" >
+        qydmc,
+      </if>
+      <if test="qydzbh != null" >
+        qydzbh,
+      </if>
+      <if test="mddmc != null" >
+        mddmc,
+      </if>
+      <if test="mddzbh != null" >
+        mddzbh,
+      </if>
+      <if test="dhcdh != null" >
+        dhcdh,
+      </if>
+      <if test="fwyq != null" >
+        fwyq,
+      </if>
+      <if test="shfs != null" >
+        shfs,
+      </if>
+      <if test="sohfs != null" >
+        sohfs,
+      </if>
+      <if test="hwmc != null" >
+        hwmc,
+      </if>
+      <if test="js != null" >
+        js,
+      </if>
+      <if test="bibh != null" >
+        bibh,
+      </if>
+      <if test="hwdjbh != null" >
+        hwdjbh,
+      </if>
+      <if test="zl != null" >
+        zl,
+      </if>
+      <if test="tj != null" >
+        tj,
+      </if>
+      <if test="hsbl != null" >
+        hsbl,
+      </if>
+      <if test="zldj != null" >
+        zldj,
+      </if>
+      <if test="tjdj != null" >
+        tjdj,
+      </if>
+      <if test="ffje != null" >
+        ffje,
+      </if>
+      <if test="gbf != null" >
+        gbf,
+      </if>
+      <if test="thf != null" >
+        thf,
+      </if>
+      <if test="shf != null" >
+        shf,
+      </if>
+      <if test="dbf != null" >
+        dbf,
+      </if>
+      <if test="bje != null" >
+        bje,
+      </if>
+      <if test="bjl != null" >
+        bjl,
+      </if>
+      <if test="bjf != null" >
+        bjf,
+      </if>
+      <if test="hjje != null" >
+        hjje,
+      </if>
+      <if test="fqysje != null" >
+        fqysje,
+      </if>
+      <if test="dqjsysje != null" >
+        dqjsysje,
+      </if>
+      <if test="shrfkysje != null" >
+        shrfkysje,
+      </if>
+      <if test="fqss != null" >
+        fqss,
+      </if>
+      <if test="jsss != null" >
+        jsss,
+      </if>
+      <if test="shrfyss != null" >
+        shrfyss,
+      </if>
+      <if test="dshke != null" >
+        dshke,
+      </if>
+      <if test="dsfwfl != null" >
+        dsfwfl,
+      </if>
+      <if test="dshk != null" >
+        dshk,
+      </if>
+      <if test="bz != null" >
+        bz,
+      </if>
+      <if test="tyrqz != null" >
+        tyrqz,
+      </if>
+      <if test="cyrqz != null" >
+        cyrqz,
+      </if>
+      <if test="cwqz != null" >
+        cwqz,
+      </if>
+      <if test="jhzt != null" >
+        jhzt,
+      </if>
+      <if test="ydwz != null" >
+        ydwz,
+      </if>
+      <if test="ydzt != null" >
+        ydzt,
+      </if>
+      <if test="fhcwzt != null" >
+        fhcwzt,
+      </if>
+      <if test="dhcwzt != null" >
+        dhcwzt,
+      </if>
+      <if test="kdsj != null" >
+        kdsj,
+      </if>
+      <if test="lrsj != null" >
+        lrsj,
+      </if>
+      <if test="sfykfp != null" >
+        sfykfp,
+      </if>
+      <if test="zzcs != null" >
+        zzcs,
+      </if>
+      <if test="qrshfs != null" >
+        qrshfs,
+      </if>
+      <if test="sfqrshfs != null" >
+        sfqrshfs,
+      </if>
+      <if test="qrshdd != null" >
+        qrshdd,
+      </if>
+      <if test="qsrq != null" >
+        qsrq,
+      </if>
+      <if test="qsqk != null" >
+        qsqk,
+      </if>
+      <if test="shqsddycs != null" >
+        shqsddycs,
+      </if>
+      <if test="fhtzpzbh != null" >
+        fhtzpzbh,
+      </if>
+      <if test="dhtzpzbh != null" >
+        dhtzpzbh,
+      </if>
+      <if test="ydlx != null" >
+        ydlx,
+      </if>
+      <if test="khhd != null" >
+        khhd,
+      </if>
+      <if test="khhdsm != null" >
+        khhdsm,
+      </if>
+      <if test="ldy != null" >
+        ldy,
+      </if>
+      <if test="thywy != null" >
+        thywy,
+      </if>
+      <if test="shywy != null" >
+        shywy,
+      </if>
+      <if test="kdy != null" >
+        kdy,
+      </if>
+      <if test="ldyszgs != null" >
+        ldyszgs,
+      </if>
+      <if test="nbbz != null" >
+        nbbz,
+      </if>
+      <if test="hh != null" >
+        hh,
+      </if>
+      <if test="qydssyjgs != null" >
+        qydssyjgs,
+      </if>
+      <if test="mddssyjgs != null" >
+        mddssyjgs,
+      </if>
+      <if test="mddzbh1 != null" >
+        mddzbh_1,
+      </if>
+      <if test="mddzbh2 != null" >
+        mddzbh_2,
+      </if>
+      <if test="mddzbh3 != null" >
+        mddzbh_3,
+      </if>
+      <if test="sfytz != null" >
+        sfytz,
+      </if>
+      <if test="ydFcbh != null" >
+        yd_fcbh,
+      </if>
+      <if test="ydCph != null" >
+        yd_cph,
+      </if>
+      <if test="yyshsj != null" >
+        yyshsj,
+      </if>
+      <if test="fdfs != null" >
+        fdfs,
+      </if>
+      <if test="zzfwxmjfy != null" >
+        zzfwxmjfy,
+      </if>
+      <if test="ydFhfph != null" >
+        yd_fhfph,
+      </if>
+      <if test="ydFhbzrq != null" >
+        yd_fhbzrq,
+      </if>
+      <if test="ydFhbzd != null" >
+        yd_fhbzd,
+      </if>
+      <if test="ydDhfph != null" >
+        yd_dhfph,
+      </if>
+      <if test="ydDhbzrq != null" >
+        yd_dhbzrq,
+      </if>
+      <if test="ydDhbzd != null" >
+        yd_dhbzd,
+      </if>
+      <if test="ydFhfcbh != null" >
+        yd_fhfcbh,
+      </if>
+      <if test="ydFhcph != null" >
+        yd_fhcph,
+      </if>
+      <if test="ydQtsf != null" >
+        yd_qtsf,
+      </if>
+      <if test="ydQtsfDh != null" >
+        yd_qtsf_dh,
+      </if>
+      <if test="tswp != null" >
+        tswp,
+      </if>
+      <if test="qzh != null" >
+        qzh,
+      </if>
+      <if test="yxh != null" >
+        yxh,
+      </if>
+      <if test="fwlx != null" >
+        fwlx,
+      </if>
+      <if test="bzmx != null" >
+        bzmx,
+      </if>
+      <if test="dxfw != null" >
+        dxfw,
+      </if>
+      <if test="tff != null" >
+        tff,
+      </if>
+      <if test="xxf != null" >
+        xxf,
+      </if>
+      <if test="shrjsys != null" >
+        shrjsys,
+      </if>
+      <if test="shrjsss != null" >
+        shrjsss,
+      </if>
+      <if test="dsfzfys != null" >
+        dsfzfys,
+      </if>
+      <if test="dsfzfss != null" >
+        dsfzfss,
+      </if>
+      <if test="dsfkhbh != null" >
+        dsfkhbh,
+      </if>
+      <if test="dsfkhmc != null" >
+        dsfkhmc,
+      </if>
+      <if test="dsflxr != null" >
+        dsflxr,
+      </if>
+      <if test="dsfdz != null" >
+        dsfdz,
+      </if>
+      <if test="recordDate != null" >
+        record_date,
+      </if>
+      <if test="shyqbh != null" >
+        shyqbh,
+      </if>
+      <if test="tzkhsj != null" >
+        tzkhsj,
+      </if>
+      <if test="khqssj != null" >
+        khqssj,
+      </if>
+      <if test="thmm != null" >
+        thmm,
+      </if>
+      <if test="tbhwlx != null" >
+        tbhwlx,
+      </if>
+      <if test="easSfsd != null" >
+        eas_sfsd,
+      </if>
+      <if test="easFq != null" >
+        eas_fq,
+      </if>
+      <if test="easJs != null" >
+        eas_js,
+      </if>
+      <if test="easDf != null" >
+        eas_df,
+      </if>
+      <if test="easDfjs != null" >
+        eas_dfjs,
+      </if>
+      <if test="easDsf != null" >
+        eas_dsf,
+      </if>
+      <if test="isfqdyd != null" >
+        isfqdyd,
+      </if>
+      <if test="easSggzsd != null" >
+        eas_sggzsd,
+      </if>
+      <if test="lhy != null" >
+        lhy,
+      </if>
+      <if test="lastModDate != null" >
+        last_mod_date,
+      </if>
+      <if test="ryf != null" >
+        ryf,
+      </if>
+      <if test="pdaxxbs != null" >
+        pdaxxbs,
+      </if>
+      <if test="dphbs != null" >
+        dphbs,
+      </if>
+      <if test="pdajs != null" >
+        pdajs,
+      </if>
+      <if test="pdazxtx != null" >
+        pdazxtx,
+      </if>
+      <if test="zxzl != null" >
+        zxzl,
+      </if>
+      <if test="fhrareacode != null" >
+        fhrareacode,
+      </if>
+      <if test="shrareacode != null" >
+        shrareacode,
+      </if>
+      <if test="ys != null" >
+        ys,
+      </if>
+      <if test="extKhdh != null" >
+        ext_khdh,
+      </if>
+      <if test="sfgzdkh != null" >
+        sfgzdkh,
+      </if>
+      <if test="ydly != null" >
+        ydly,
+      </if>
+      <if test="omszt != null" >
+        omszt,
+      </if>
+      <if test="ydDycs != null" >
+        yd_dycs,
+      </if>
+      <if test="dshkZhxx != null" >
+        dshk_zhxx,
+      </if>
+      <if test="sxjssj != null" >
+        sxjssj,
+      </if>
+      <if test="ljhh != null" >
+        ljhh,
+      </if>
+      <if test="ydqszt != null" >
+        ydqszt,
+      </if>
+      <if test="dshksxfSqfs != null" >
+        dshksxf_sqfs,
+      </if>
+      <if test="sccwslsj != null" >
+        sccwslsj,
+      </if>
+      <if test="ydlb != null" >
+        ydlb,
+      </if>
+      <if test="ydlbFh != null" >
+        ydlb_fh,
+      </if>
+      <if test="ydlbDh != null" >
+        ydlb_dh,
+      </if>
+      <if test="ydlbDsf != null" >
+        ydlb_dsf,
+      </if>
+      <if test="ydlbDssxf != null" >
+        ydlb_dssxf,
+      </if>
+      <if test="omsDdqd != null" >
+        oms_ddqd,
+      </if>
+      <if test="maxKhyqddsj != null" >
+        max_khyqddsj,
+      </if>
+      <if test="slf != null" >
+        slf,
+      </if>
+      <if test="ydxcjl != null" >
+        ydxcjl,
+      </if>
+      <if test="omsDiscount != null" >
+        oms_discount,
+      </if>
+      <if test="payerType != null" >
+        payer_type,
+      </if>
+      <if test="sfrfd != null" >
+        sfrfd,
+      </if>
+      <if test="transporttype != null" >
+        transporttype,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="ydbh != null" >
+        #{ydbh,jdbcType=CHAR},
+      </if>
+      <if test="tyrbh != null" >
+        #{tyrbh,jdbcType=CHAR},
+      </if>
+      <if test="tyrmc != null" >
+        #{tyrmc,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrlxr != null" >
+        #{tyrlxr,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrdz != null" >
+        #{tyrdz,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrlxdh1 != null" >
+        #{tyrlxdh1,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrlxdh2 != null" >
+        #{tyrlxdh2,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrsj != null" >
+        #{tyrsj,jdbcType=VARCHAR},
+      </if>
+      <if test="shrbh != null" >
+        #{shrbh,jdbcType=CHAR},
+      </if>
+      <if test="shrmc != null" >
+        #{shrmc,jdbcType=VARCHAR},
+      </if>
+      <if test="shrlxr != null" >
+        #{shrlxr,jdbcType=VARCHAR},
+      </if>
+      <if test="shrdz != null" >
+        #{shrdz,jdbcType=VARCHAR},
+      </if>
+      <if test="shrlxdh1 != null" >
+        #{shrlxdh1,jdbcType=VARCHAR},
+      </if>
+      <if test="shrlxdh2 != null" >
+        #{shrlxdh2,jdbcType=VARCHAR},
+      </if>
+      <if test="shrsj != null" >
+        #{shrsj,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrq != null" >
+        #{tyrq,jdbcType=DATE},
+      </if>
+      <if test="khyqddsj != null" >
+        #{khyqddsj,jdbcType=DATE},
+      </if>
+      <if test="qydmc != null" >
+        #{qydmc,jdbcType=CHAR},
+      </if>
+      <if test="qydzbh != null" >
+        #{qydzbh,jdbcType=CHAR},
+      </if>
+      <if test="mddmc != null" >
+        #{mddmc,jdbcType=CHAR},
+      </if>
+      <if test="mddzbh != null" >
+        #{mddzbh,jdbcType=CHAR},
+      </if>
+      <if test="dhcdh != null" >
+        #{dhcdh,jdbcType=VARCHAR},
+      </if>
+      <if test="fwyq != null" >
+        #{fwyq,jdbcType=CHAR},
+      </if>
+      <if test="shfs != null" >
+        #{shfs,jdbcType=INTEGER},
+      </if>
+      <if test="sohfs != null" >
+        #{sohfs,jdbcType=INTEGER},
+      </if>
+      <if test="hwmc != null" >
+        #{hwmc,jdbcType=VARCHAR},
+      </if>
+      <if test="js != null" >
+        #{js,jdbcType=INTEGER},
+      </if>
+      <if test="bibh != null" >
+        #{bibh,jdbcType=VARCHAR},
+      </if>
+      <if test="hwdjbh != null" >
+        #{hwdjbh,jdbcType=VARCHAR},
+      </if>
+      <if test="zl != null" >
+        #{zl,jdbcType=REAL},
+      </if>
+      <if test="tj != null" >
+        #{tj,jdbcType=REAL},
+      </if>
+      <if test="hsbl != null" >
+        #{hsbl,jdbcType=INTEGER},
+      </if>
+      <if test="zldj != null" >
+        #{zldj,jdbcType=REAL},
+      </if>
+      <if test="tjdj != null" >
+        #{tjdj,jdbcType=REAL},
+      </if>
+      <if test="ffje != null" >
+        #{ffje,jdbcType=REAL},
+      </if>
+      <if test="gbf != null" >
+        #{gbf,jdbcType=REAL},
+      </if>
+      <if test="thf != null" >
+        #{thf,jdbcType=REAL},
+      </if>
+      <if test="shf != null" >
+        #{shf,jdbcType=REAL},
+      </if>
+      <if test="dbf != null" >
+        #{dbf,jdbcType=REAL},
+      </if>
+      <if test="bje != null" >
+        #{bje,jdbcType=REAL},
+      </if>
+      <if test="bjl != null" >
+        #{bjl,jdbcType=INTEGER},
+      </if>
+      <if test="bjf != null" >
+        #{bjf,jdbcType=REAL},
+      </if>
+      <if test="hjje != null" >
+        #{hjje,jdbcType=REAL},
+      </if>
+      <if test="fqysje != null" >
+        #{fqysje,jdbcType=REAL},
+      </if>
+      <if test="dqjsysje != null" >
+        #{dqjsysje,jdbcType=REAL},
+      </if>
+      <if test="shrfkysje != null" >
+        #{shrfkysje,jdbcType=REAL},
+      </if>
+      <if test="fqss != null" >
+        #{fqss,jdbcType=REAL},
+      </if>
+      <if test="jsss != null" >
+        #{jsss,jdbcType=REAL},
+      </if>
+      <if test="shrfyss != null" >
+        #{shrfyss,jdbcType=REAL},
+      </if>
+      <if test="dshke != null" >
+        #{dshke,jdbcType=REAL},
+      </if>
+      <if test="dsfwfl != null" >
+        #{dsfwfl,jdbcType=INTEGER},
+      </if>
+      <if test="dshk != null" >
+        #{dshk,jdbcType=REAL},
+      </if>
+      <if test="bz != null" >
+        #{bz,jdbcType=VARCHAR},
+      </if>
+      <if test="tyrqz != null" >
+        #{tyrqz,jdbcType=VARCHAR},
+      </if>
+      <if test="cyrqz != null" >
+        #{cyrqz,jdbcType=VARCHAR},
+      </if>
+      <if test="cwqz != null" >
+        #{cwqz,jdbcType=VARCHAR},
+      </if>
+      <if test="jhzt != null" >
+        #{jhzt,jdbcType=INTEGER},
+      </if>
+      <if test="ydwz != null" >
+        #{ydwz,jdbcType=CHAR},
+      </if>
+      <if test="ydzt != null" >
+        #{ydzt,jdbcType=INTEGER},
+      </if>
+      <if test="fhcwzt != null" >
+        #{fhcwzt,jdbcType=INTEGER},
+      </if>
+      <if test="dhcwzt != null" >
+        #{dhcwzt,jdbcType=INTEGER},
+      </if>
+      <if test="kdsj != null" >
+        #{kdsj,jdbcType=DATE},
+      </if>
+      <if test="lrsj != null" >
+        #{lrsj,jdbcType=DATE},
+      </if>
+      <if test="sfykfp != null" >
+        #{sfykfp,jdbcType=INTEGER},
+      </if>
+      <if test="zzcs != null" >
+        #{zzcs,jdbcType=INTEGER},
+      </if>
+      <if test="qrshfs != null" >
+        #{qrshfs,jdbcType=INTEGER},
+      </if>
+      <if test="sfqrshfs != null" >
+        #{sfqrshfs,jdbcType=INTEGER},
+      </if>
+      <if test="qrshdd != null" >
+        #{qrshdd,jdbcType=VARCHAR},
+      </if>
+      <if test="qsrq != null" >
+        #{qsrq,jdbcType=DATE},
+      </if>
+      <if test="qsqk != null" >
+        #{qsqk,jdbcType=VARCHAR},
+      </if>
+      <if test="shqsddycs != null" >
+        #{shqsddycs,jdbcType=INTEGER},
+      </if>
+      <if test="fhtzpzbh != null" >
+        #{fhtzpzbh,jdbcType=VARCHAR},
+      </if>
+      <if test="dhtzpzbh != null" >
+        #{dhtzpzbh,jdbcType=VARCHAR},
+      </if>
+      <if test="ydlx != null" >
+        #{ydlx,jdbcType=INTEGER},
+      </if>
+      <if test="khhd != null" >
+        #{khhd,jdbcType=INTEGER},
+      </if>
+      <if test="khhdsm != null" >
+        #{khhdsm,jdbcType=VARCHAR},
+      </if>
+      <if test="ldy != null" >
+        #{ldy,jdbcType=VARCHAR},
+      </if>
+      <if test="thywy != null" >
+        #{thywy,jdbcType=VARCHAR},
+      </if>
+      <if test="shywy != null" >
+        #{shywy,jdbcType=VARCHAR},
+      </if>
+      <if test="kdy != null" >
+        #{kdy,jdbcType=VARCHAR},
+      </if>
+      <if test="ldyszgs != null" >
+        #{ldyszgs,jdbcType=CHAR},
+      </if>
+      <if test="nbbz != null" >
+        #{nbbz,jdbcType=VARCHAR},
+      </if>
+      <if test="hh != null" >
+        #{hh,jdbcType=VARCHAR},
+      </if>
+      <if test="qydssyjgs != null" >
+        #{qydssyjgs,jdbcType=CHAR},
+      </if>
+      <if test="mddssyjgs != null" >
+        #{mddssyjgs,jdbcType=CHAR},
+      </if>
+      <if test="mddzbh1 != null" >
+        #{mddzbh1,jdbcType=CHAR},
+      </if>
+      <if test="mddzbh2 != null" >
+        #{mddzbh2,jdbcType=CHAR},
+      </if>
+      <if test="mddzbh3 != null" >
+        #{mddzbh3,jdbcType=CHAR},
+      </if>
+      <if test="sfytz != null" >
+        #{sfytz,jdbcType=INTEGER},
+      </if>
+      <if test="ydFcbh != null" >
+        #{ydFcbh,jdbcType=VARCHAR},
+      </if>
+      <if test="ydCph != null" >
+        #{ydCph,jdbcType=VARCHAR},
+      </if>
+      <if test="yyshsj != null" >
+        #{yyshsj,jdbcType=DATE},
+      </if>
+      <if test="fdfs != null" >
+        #{fdfs,jdbcType=INTEGER},
+      </if>
+      <if test="zzfwxmjfy != null" >
+        #{zzfwxmjfy,jdbcType=VARCHAR},
+      </if>
+      <if test="ydFhfph != null" >
+        #{ydFhfph,jdbcType=VARCHAR},
+      </if>
+      <if test="ydFhbzrq != null" >
+        #{ydFhbzrq,jdbcType=DATE},
+      </if>
+      <if test="ydFhbzd != null" >
+        #{ydFhbzd,jdbcType=VARCHAR},
+      </if>
+      <if test="ydDhfph != null" >
+        #{ydDhfph,jdbcType=VARCHAR},
+      </if>
+      <if test="ydDhbzrq != null" >
+        #{ydDhbzrq,jdbcType=DATE},
+      </if>
+      <if test="ydDhbzd != null" >
+        #{ydDhbzd,jdbcType=VARCHAR},
+      </if>
+      <if test="ydFhfcbh != null" >
+        #{ydFhfcbh,jdbcType=VARCHAR},
+      </if>
+      <if test="ydFhcph != null" >
+        #{ydFhcph,jdbcType=VARCHAR},
+      </if>
+      <if test="ydQtsf != null" >
+        #{ydQtsf,jdbcType=REAL},
+      </if>
+      <if test="ydQtsfDh != null" >
+        #{ydQtsfDh,jdbcType=REAL},
+      </if>
+      <if test="tswp != null" >
+        #{tswp,jdbcType=INTEGER},
+      </if>
+      <if test="qzh != null" >
+        #{qzh,jdbcType=INTEGER},
+      </if>
+      <if test="yxh != null" >
+        #{yxh,jdbcType=INTEGER},
+      </if>
+      <if test="fwlx != null" >
+        #{fwlx,jdbcType=INTEGER},
+      </if>
+      <if test="bzmx != null" >
+        #{bzmx,jdbcType=VARCHAR},
+      </if>
+      <if test="dxfw != null" >
+        #{dxfw,jdbcType=INTEGER},
+      </if>
+      <if test="tff != null" >
+        #{tff,jdbcType=REAL},
+      </if>
+      <if test="xxf != null" >
+        #{xxf,jdbcType=REAL},
+      </if>
+      <if test="shrjsys != null" >
+        #{shrjsys,jdbcType=REAL},
+      </if>
+      <if test="shrjsss != null" >
+        #{shrjsss,jdbcType=REAL},
+      </if>
+      <if test="dsfzfys != null" >
+        #{dsfzfys,jdbcType=REAL},
+      </if>
+      <if test="dsfzfss != null" >
+        #{dsfzfss,jdbcType=REAL},
+      </if>
+      <if test="dsfkhbh != null" >
+        #{dsfkhbh,jdbcType=CHAR},
+      </if>
+      <if test="dsfkhmc != null" >
+        #{dsfkhmc,jdbcType=VARCHAR},
+      </if>
+      <if test="dsflxr != null" >
+        #{dsflxr,jdbcType=VARCHAR},
+      </if>
+      <if test="dsfdz != null" >
+        #{dsfdz,jdbcType=VARCHAR},
+      </if>
+      <if test="recordDate != null" >
+        #{recordDate,jdbcType=DATE},
+      </if>
+      <if test="shyqbh != null" >
+        #{shyqbh,jdbcType=CHAR},
+      </if>
+      <if test="tzkhsj != null" >
+        #{tzkhsj,jdbcType=DATE},
+      </if>
+      <if test="khqssj != null" >
+        #{khqssj,jdbcType=DATE},
+      </if>
+      <if test="thmm != null" >
+        #{thmm,jdbcType=CHAR},
+      </if>
+      <if test="tbhwlx != null" >
+        #{tbhwlx,jdbcType=INTEGER},
+      </if>
+      <if test="easSfsd != null" >
+        #{easSfsd,jdbcType=INTEGER},
+      </if>
+      <if test="easFq != null" >
+        #{easFq,jdbcType=REAL},
+      </if>
+      <if test="easJs != null" >
+        #{easJs,jdbcType=REAL},
+      </if>
+      <if test="easDf != null" >
+        #{easDf,jdbcType=REAL},
+      </if>
+      <if test="easDfjs != null" >
+        #{easDfjs,jdbcType=REAL},
+      </if>
+      <if test="easDsf != null" >
+        #{easDsf,jdbcType=REAL},
+      </if>
+      <if test="isfqdyd != null" >
+        #{isfqdyd,jdbcType=INTEGER},
+      </if>
+      <if test="easSggzsd != null" >
+        #{easSggzsd,jdbcType=INTEGER},
+      </if>
+      <if test="lhy != null" >
+        #{lhy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastModDate != null" >
+        #{lastModDate,jdbcType=DATE},
+      </if>
+      <if test="ryf != null" >
+        #{ryf,jdbcType=REAL},
+      </if>
+      <if test="pdaxxbs != null" >
+        #{pdaxxbs,jdbcType=INTEGER},
+      </if>
+      <if test="dphbs != null" >
+        #{dphbs,jdbcType=INTEGER},
+      </if>
+      <if test="pdajs != null" >
+        #{pdajs,jdbcType=INTEGER},
+      </if>
+      <if test="pdazxtx != null" >
+        #{pdazxtx,jdbcType=VARCHAR},
+      </if>
+      <if test="zxzl != null" >
+        #{zxzl,jdbcType=REAL},
+      </if>
+      <if test="fhrareacode != null" >
+        #{fhrareacode,jdbcType=CHAR},
+      </if>
+      <if test="shrareacode != null" >
+        #{shrareacode,jdbcType=CHAR},
+      </if>
+      <if test="ys != null" >
+        #{ys,jdbcType=INTEGER},
+      </if>
+      <if test="extKhdh != null" >
+        #{extKhdh,jdbcType=VARCHAR},
+      </if>
+      <if test="sfgzdkh != null" >
+        #{sfgzdkh,jdbcType=INTEGER},
+      </if>
+      <if test="ydly != null" >
+        #{ydly,jdbcType=INTEGER},
+      </if>
+      <if test="omszt != null" >
+        #{omszt,jdbcType=INTEGER},
+      </if>
+      <if test="ydDycs != null" >
+        #{ydDycs,jdbcType=INTEGER},
+      </if>
+      <if test="dshkZhxx != null" >
+        #{dshkZhxx,jdbcType=VARCHAR},
+      </if>
+      <if test="sxjssj != null" >
+        #{sxjssj,jdbcType=DATE},
+      </if>
+      <if test="ljhh != null" >
+        #{ljhh,jdbcType=VARCHAR},
+      </if>
+      <if test="ydqszt != null" >
+        #{ydqszt,jdbcType=INTEGER},
+      </if>
+      <if test="dshksxfSqfs != null" >
+        #{dshksxfSqfs,jdbcType=INTEGER},
+      </if>
+      <if test="sccwslsj != null" >
+        #{sccwslsj,jdbcType=DATE},
+      </if>
+      <if test="ydlb != null" >
+        #{ydlb,jdbcType=INTEGER},
+      </if>
+      <if test="ydlbFh != null" >
+        #{ydlbFh,jdbcType=INTEGER},
+      </if>
+      <if test="ydlbDh != null" >
+        #{ydlbDh,jdbcType=INTEGER},
+      </if>
+      <if test="ydlbDsf != null" >
+        #{ydlbDsf,jdbcType=INTEGER},
+      </if>
+      <if test="ydlbDssxf != null" >
+        #{ydlbDssxf,jdbcType=INTEGER},
+      </if>
+      <if test="omsDdqd != null" >
+        #{omsDdqd,jdbcType=VARCHAR},
+      </if>
+      <if test="maxKhyqddsj != null" >
+        #{maxKhyqddsj,jdbcType=DATE},
+      </if>
+      <if test="slf != null" >
+        #{slf,jdbcType=REAL},
+      </if>
+      <if test="ydxcjl != null" >
+        #{ydxcjl,jdbcType=REAL},
+      </if>
+      <if test="omsDiscount != null" >
+        #{omsDiscount,jdbcType=REAL},
+      </if>
+      <if test="payerType != null" >
+        #{payerType,jdbcType=INTEGER},
+      </if>
+      <if test="sfrfd != null" >
+        #{sfrfd,jdbcType=INTEGER},
+      </if>
+      <if test="transporttype != null" >
+        #{transporttype,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>
