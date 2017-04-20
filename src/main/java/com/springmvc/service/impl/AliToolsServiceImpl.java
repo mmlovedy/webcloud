@@ -108,8 +108,8 @@ public class AliToolsServiceImpl implements AliToolsService {
                                 addressPinyin = strs[3].replaceAll(" ","").toUpperCase();
                                 detailAddress = province.getDistrictName()+city.getDistrictName()+area.getDistrictName()+strs[1];
                                 detailAddressPinyin = province.getPinyin()+city.getPinyin()+area.getPinyin()+addressPinyin;
-                                Street street = new Street(province.getDistrictCode(),city.getDistrictCode(),area.getDistrictCode(),
-                                        strs[0],detailAddress,detailAddressPinyin,strs[1],addressPinyin);
+                                Street street = new Street(/*province.getDistrictCode(),city.getDistrictCode(),area.getDistrictCode(),
+                                        strs[0],detailAddress,detailAddressPinyin,*/strs[1],addressPinyin);
                                 streets.add(street);
                                 districtDao.insert(street);
                                 try {

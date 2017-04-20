@@ -19,12 +19,12 @@
   </resultMap>
 
   <resultMap id="StreetResultMap" type="com.springmvc.model.Street" >
-    <result column="provinceCode" property="provinceCode" jdbcType="VARCHAR" />
+   <!-- <result column="provinceCode" property="provinceCode" jdbcType="VARCHAR" />
     <result column="cityCode" property="cityCode" jdbcType="VARCHAR" />
     <result column="countryCode" property="countryCode" jdbcType="VARCHAR" />
     <result column="CODE" property="code" jdbcType="VARCHAR" />
     <result column="detaillAddress" property="detaillAddress" jdbcType="VARCHAR" />
-    <result column="detaillAddressPinyin" property="detaillAddressPinyin" jdbcType="VARCHAR" />
+    <result column="detaillAddressPinyin" property="detaillAddressPinyin" jdbcType="VARCHAR" /> -->
     <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="addressPinyin" property="addressPinyin" jdbcType="VARCHAR" />
   </resultMap>
@@ -56,6 +56,6 @@
   </insert>
 
   <select id="selectAllStreets" resultMap="StreetResultMap">
-    SELECT * from T_BSE_DISTRICT_STREET
+    SELECT DISTINCT address,addressPinyin from T_BSE_DISTRICT_STREET
   </select>
 </mapper>
