@@ -36,11 +36,16 @@ public class addressServiceImp implements AddressService {
 
     private final String URL = "http://localhost:9200/hydata/yd";
 
-    private final String URL_ADDRESS = "http://localhost:9200/address/4level";
+//    private final String URL_ADDRESS = "http://localhost:9200/address/4level";
+
+    private final String URL_ADDRESS = "http://172.23.72.1:9200/address/4level";
 
     private final String URL_SEARCH = "http://localhost:9200/hydata/yd/_search";
 
-    private final String URL_ADDRESS_SEARCH = "http://localhost:9200/address/4level/_search";
+//    private final String URL_ADDRESS_SEARCH = "http://localhost:9200/address/4level/_search";
+
+    private final String URL_ADDRESS_SEARCH = "http://172.23.72.1:9200/address/4level/_search";
+
 
 
     RestTemplate restTemplate = new RestTemplate();
@@ -74,10 +79,11 @@ public class addressServiceImp implements AddressService {
         HttpHeaders headers =HttpUtils.getHeaders();
         String json;
         String str;
+        int i = 0;
         for(Street street :streets){
             json = JSON.toJSONString(street);
             str = restTemplate.postForObject(URL_ADDRESS,new HttpEntity<String>(json, headers),String.class);
-            System.out.println(str);
+            System.out.println(i++);
         }
         System.out.println(restTemplate.getForObject(URL_ADDRESS_SEARCH,String.class));
     }

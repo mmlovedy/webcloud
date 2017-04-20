@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvc.dao.DistrictDao" >
+  <resultMap id="BaseResultMap" type="com.springmvc.model.District" >
+    <result column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="DISTRICT_CODE" property="districtCode" jdbcType="VARCHAR" />
+    <result column="DISTRICT_NAME" property="districtName" jdbcType="VARCHAR" />
+    <result column="DISTRICT_TYPE" property="districtType" jdbcType="VARCHAR" />
+    <result column="PARENT_DISTRICT_CODE" property="parentDistrictCode" jdbcType="VARCHAR" />
+    <result column="PINYIN" property="pinyin" jdbcType="VARCHAR" />
+    <result column="VERSION_NO" property="versionNo" jdbcType="REAL" />
+    <result column="CREATE_TIME" property="createTime" jdbcType="DATE" />
+    <result column="CREATE_USER_CODE" property="createUserCode" jdbcType="VARCHAR" />
+    <result column="MODIFY_TIME" property="modifyTime" jdbcType="DATE" />
+    <result column="MODIFY_USER_CODE" property="modifyUserCode" jdbcType="VARCHAR" />
+    <result column="ACTIVE" property="active" jdbcType="CHAR" />
+    <result column="DISTRICT_SHORT_NAME" property="districtShortName" jdbcType="VARCHAR" />
+    <result column="PINYIN_SHORT" property="pinyinShort" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <resultMap id="StreetResultMap" type="com.springmvc.model.Street" >
+    <result column="provinceCode" property="provinceCode" jdbcType="VARCHAR" />
+    <result column="cityCode" property="cityCode" jdbcType="VARCHAR" />
+    <result column="countryCode" property="countryCode" jdbcType="VARCHAR" />
+    <result column="CODE" property="code" jdbcType="VARCHAR" />
+    <result column="detaillAddress" property="detaillAddress" jdbcType="VARCHAR" />
+    <result column="detaillAddressPinyin" property="detaillAddressPinyin" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="addressPinyin" property="addressPinyin" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="selectAllProvince" resultMap="BaseResultMap">
+    SELECT * from ssm.T_BSE_DISTRICT WHERE DISTRICT_TYPE = 'PROVINCE'
+  </select>
+
+  <select id="selectDistByParent" resultMap="BaseResultMap" parameterType="com.springmvc.model.District">
+    SELECT * from ssm.T_BSE_DISTRICT WHERE DISTRICT_CODE = #{DISTRICT_CODE}
+  </select>
+
+  <select id="selectAllDistric" resultMap="BaseResultMap">
+    SELECT * from ssm.T_BSE_DISTRICT
+  </select>
+  <insert id="insert" parameterType="com.springmvc.model.Street" >
+    insert into T_BSE_DISTRICT_STREET
+    (provinceCode,cityCode,countryCode,CODE,detaillAddress,detaillAddressPinyin,address,addressPinyin)
+    VALUES (
+    #{provinceCode,jdbcType=VARCHAR},
+    #{cityCode,jdbcType=VARCHAR},
+    #{countryCode,jdbcType=VARCHAR},
+    #{code,jdbcType=VARCHAR},
+    #{detaillAddress,jdbcType=VARCHAR},
+    #{detaillAddressPinyin,jdbcType=VARCHAR},
+    #{address,jdbcType=VARCHAR},
+    #{addressPinyin,jdbcType=VARCHAR}
+    )
+  </insert>
+
+  <select id="selectAllStreets" resultMap="StreetResultMap">
+    SELECT * from T_BSE_DISTRICT_STREET
+  </select>
+</mapper>

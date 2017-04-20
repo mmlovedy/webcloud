@@ -35,12 +35,12 @@ public class Street {
 
     }
 
-    public String getProvincecode() {
+    public String getProvinceCode() {
         return provinceCode;
     }
 
-    public void setProvincecode(String provincecode) {
-        this.provinceCode = provincecode;
+    public void setProvinceCode(String provinceCode) {
+        this.provinceCode = provinceCode;
     }
 
     public String getCityCode() {
